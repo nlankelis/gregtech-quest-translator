@@ -30,8 +30,12 @@ class FileProcessor:
         return FileResult()
 
     def _process_json(self, file_path: Path) -> FileResult:
-        with file_path.open("r", encoding="utf-8") as handle:
-            data = json.load(handle)
+        try:
+            with file_path.open("r", encoding="utf-8") as handle:
+                data = json.load(handle)
+        except json.JSONDecodeError as exc:
+            print(f"Skipping invalid JSON {file_path}: {exc}")
+            return FileResult()
 
         translated_data, replaced = self._translate_json_values(data)
         if replaced == 0:
