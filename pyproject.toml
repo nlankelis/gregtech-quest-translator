@@ -12,6 +12,7 @@ dependencies = [
     "googletrans==4.0.0-rc1",
     "tqdm",
     "nbtlib",
+    "legacy-cgi>=2.6; python_version >= '3.13'",
 ]
 
 [project.optional-dependencies]
