@@ -4,6 +4,20 @@ Translates Chinese quest and config text in Minecraft modpack folders to English
 
 Supported formats: `.json`, `.toml`, `.cfg`, `.snbt`, `.zs`, `.kubejs`, `.txt`, `.mcfunction`
 
+## Screenshots
+
+### Before translation (Chinese)
+
+| Quest book — chapter overview | Quest book — task details |
+|---|---|
+| ![Before translation — chapter overview](docs/screenshots/before-chapter.png) | ![Before translation — task details](docs/screenshots/before-quest.png) |
+
+### After translation (English)
+
+| Quest book — chapter overview | Quest book — task details |
+|---|---|
+| ![After translation — chapter overview](docs/screenshots/after-chapter.png) | ![After translation — task details](docs/screenshots/after-quest.png) |
+
 ## Requirements
 
 - **Python 3.10+** ([download](https://www.python.org/downloads/))
